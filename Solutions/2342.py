@@ -1,7 +1,7 @@
 class Solution:
-    def maximumSum(self, nums: List[int]) -> int:
+    def maximumSum(self, nums: List[int]) -> int: # type: ignore
         res = -1
-        h = collections.defaultdict(list)
+        h = collections.defaultdict(list)  # type: ignore
 
         for num in nums:
             s = 0
