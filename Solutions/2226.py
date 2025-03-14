@@ -9,8 +9,7 @@ class Solution:
             res = 0
             for num in candies:
                 res += num // x
-                if res >= k: return True
-            return False
+            return res >= k
 
         # - binary search to find most number candies that can be shared
         start = 0
@@ -24,4 +23,3 @@ class Solution:
             else:
                 end = mid - 1
         return res
-
