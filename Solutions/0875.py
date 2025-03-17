@@ -1,10 +1,10 @@
 class Solution:
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+    def minEatingSpeed(self, piles: List[int], h: int) -> int: # type: ignore
 
         def is_valid(x):
             res = 0
             for num in piles:
-                res += math.ceil(num / x)
+                res += math.ceil(num / x) # type: ignore
             return res <= h
 
         l, r = 1, max(piles)

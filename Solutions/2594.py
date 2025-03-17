@@ -1,6 +1,6 @@
 class Solution:
     def repairCars(self, ranks: List[int], cars: int) -> int: # type: ignore
-        #initially didn't hashmap
+        #initially didn't use hashmap
         #hashmap increases efficiency as duplicate ranks may exist
         ranks = Counter(ranks)  # type: ignore
         def max_cars(mins: int) -> int:
